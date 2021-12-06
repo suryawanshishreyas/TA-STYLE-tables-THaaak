@@ -1,0 +1,381 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+    color: var(--secondry);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*variables*/
+:root{
+    --primary:#ED563A;
+    --secondry:#232D38;
+    --third:#848484;
+    --blue:#097EFF;
+}
+/*Custom styles*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+.btn{
+    box-shadow: 0;
+    border: 0;
+    padding: 10px 10px;
+    background-color: var(--primary);
+    color: white;
+}
+.btn:hover{
+    box-shadow: 0 2px 3px rgba(0, 0,0,0.5);
+    opacity: 0.8;
+}
+.flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.space-between{
+    justify-content: space-between;
+}
+.start{
+    align-items: flex-start;
+}
+.center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.container1{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+strong{
+    color: var(--primary);
+}
+.overlay{
+    position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(30,39,49,0.5);
+}
+.font-0{
+    font-size: 0;
+}
+.program-header{
+    padding-top: 80px;
+    padding-bottom: 60px;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.program-header h2{
+    font-size: 25px;
+    font-weight: 800;
+}
+.program-header .line-dec{
+    margin: 12px 0;
+}
+.program-header p{
+font-size: 15px;
+font-weight: 300;
+}
+/*Header*/
+.content{
+    z-index: 1;
+}
+.navbar ul li a:hover{
+    color: var(--primary);
+}
+.navbar{
+    position: relative;
+   
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+}
+.heading strong{
+    color: var(--primary);
+}
+.content{
+    padding: 20px 0;
+}
+.navbar li a{
+    color: white;
+}
+.active {
+    color: var(--primary);
+}
+li {
+    padding-left: 20px;
+    color: white;
+}
+.content .btn a{
+    color: white;
+}
+.content,.hero-heading{
+    position: absolute;
+   width: 100%;
+   top: 0%;
+    left: 15%;
+}
+/*hero heading*/
+.hero-heading{
+    top: 40%;
+    text-align: center;
+    color: white;
+}
+.hero h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+.hero h2{
+    font-size: 70px;
+    font-weight: 800;
+}
+/*hero*/
+video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.hero{
+    position: relative;
+}
+/*program*/
+.program-item h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.program-item p{
+    font-size: 15px;
+}
+.program-item a{
+    font-size: 15px;
+    color: var(--primary);
+}
+.program-section{
+    margin-bottom: 30px;
+}
+.program-section .dumbell-icon{
+    margin-right: 20px;
+}
+/*cta*/
+.cta{
+    background: url(../assets/cta-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+.cta{
+    text-align: center;
+}
+.cta h3{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+.cta p{
+    color: white;
+    margin: 20px 0;
+    margin-bottom: 40px;
+}
+.cta .btn{
+    margin-top: 10px;
+}
+/*classes*/
+.classes{
+    margin-bottom: 80px;
+}
+.classes-left{
+    flex: 0 1 30%;
+}
+.classes-right{
+    flex: 0 1 65%;
+}
+.classes-right img{
+    width: 100%;
+}
+.classes-left .class-item{
+    box-shadow: 0px 0px 6px  rgba(0,0,0,0.5);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.classes-left .class-item span{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.classes-left .btn{
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+}
+.classes-right h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.classes-right p{
+    font-size: 15px;
+    margin: 10px 0;
+}
+/*shedule*/
+.schedule{
+    background: url(../assets/schedule-bg.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+}
+.schedule .program-header{
+    color: white;
+}
+.schedule-days{
+    margin: 0 auto;
+}
+.schedule-days li a{
+    color: white;
+}
+.schedule-days li .active{
+    color: var(--primary);
+}
+.schedule-days li a:hover{
+    color: var(--primary);
+}
+table{
+    color:white;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+tr,td{
+    border: 1px solid white;
+    padding: 30px;
+}
+/*trainers*/
+.trainer{
+    margin-bottom: 80px;
+}
+.flex-30{
+    flex: 0 1 28%;
+}
+.trainer-item{
+    box-shadow: 0px 0px 6px  rgba(0,0,0,0.7);
+    padding: 10px;
+}
+.trainer-item .trainer-icons a {
+    color: var(--secondry);
+    margin-right: 20px;
+}
+.trainer-item .trainer-icons a .fab:hover{
+    color: var(--primary);
+}
+.trainer-item h3{
+font-size: 20px;
+font-weight: 700;
+margin: 10px 0;
+}
+.trainer-item p{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/*contact*/
+.contact-1 .contact-2{
+    height: 500px;
+}
+.contact-1 figure{
+    height: 500px;
+    font-size: 0;
+}
+iframe{
+    width: 100%;
+    height: 500px;
+}
+.contact-2 img{
+    width: 100%;
+    height: 500px;
+}
+.contact-2{
+    position: relative;
+}
+input,textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+form{
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+/*footer*/
+footer{
+    padding: 30px 0;
+    text-align: center;
+}
